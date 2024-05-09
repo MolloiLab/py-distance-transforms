@@ -1,5 +1,5 @@
 [project]
-name = "distancetransforms"
+name = "distance-transforms"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
@@ -9,7 +9,6 @@ dependencies = [
     "juliacall>=0.9.20",
     "numpy>=1.26.4",
     "torch>=2.3.0",
-    "jill>=0.11.5",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -26,4 +25,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["distancetransforms"]
+packages = ["distance-transforms"]
