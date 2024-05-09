@@ -4,14 +4,6 @@
     "DistanceTransforms": {
       "uuid": "71182807-4d06-4237-8dd0-bdafe4d097e2",
       "version": "=0.2.1"
-    },
-    "CUDA": {
-      "uuid": "052768ef-5323-5732-b1bb-66c8b64840ba",
-      "version": "=5.4.0"
-    },
-    "PythonCall": {
-      "uuid": "6099a3de-0909-46bc-b1f4-468b9a2dfc0d",
-      "version": "=0.9.20"
     }
   }
 }
