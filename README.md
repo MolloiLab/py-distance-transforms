@@ -1,3 +1,3 @@
-# distancetransforms
+# distforms
 
 Describe your project here.
