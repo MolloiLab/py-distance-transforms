@@ -4,33 +4,39 @@ from .julia_import import jl
 
 def transform_1d(arr):
     if isinstance(arr, np.ndarray):
-        arr = jl.convert(jl.Array, arr)
+        arr_jl = jl.convert(jl.Array, arr)
+        result_jl = jl.transform(jl.boolean_indicator(arr_jl))
+        return np.asarray(result_jl, dtype=arr.dtype)
     elif isinstance(arr, torch.Tensor):
-        arr = jl.convert(jl.Array, arr.numpy())
+        arr_jl = jl.convert(jl.Array, arr.numpy())
+        result_jl = jl.transform(jl.boolean_indicator(arr_jl))
+        return torch.from_numpy(np.asarray(result_jl)).to(arr.dtype)
     else:
         raise TypeError("Input must be a NumPy array or a PyTorch tensor.")
-    
-    return jl.transform(jl.boolean_indicator(arr))
 
 def transform_2d(arr, threaded=True):
     if isinstance(arr, np.ndarray):
-        arr = jl.convert(jl.Array, arr)
+        arr_jl = jl.convert(jl.Array, arr)
+        result_jl = jl.transform(jl.boolean_indicator(arr_jl), threaded=threaded)
+        return np.asarray(result_jl, dtype=arr.dtype)
     elif isinstance(arr, torch.Tensor):
-        arr = jl.convert(jl.Array, arr.numpy())
+        arr_jl = jl.convert(jl.Array, arr.numpy())
+        result_jl = jl.transform(jl.boolean_indicator(arr_jl), threaded=threaded)
+        return torch.from_numpy(np.asarray(result_jl)).to(arr.dtype)
     else:
         raise TypeError("Input must be a NumPy array or a PyTorch tensor.")
-    
-    return jl.transform(jl.boolean_indicator(arr), threaded=threaded)
 
 def transform_3d(arr, threaded=True):
     if isinstance(arr, np.ndarray):
-        arr = jl.convert(jl.Array, arr)
+        arr_jl = jl.convert(jl.Array, arr)
+        result_jl = jl.transform(jl.boolean_indicator(arr_jl), threaded=threaded)
+        return np.asarray(result_jl, dtype=arr.dtype)
     elif isinstance(arr, torch.Tensor):
-        arr = jl.convert(jl.Array, arr.numpy())
+        arr_jl = jl.convert(jl.Array, arr.numpy())
+        result_jl = jl.transform(jl.boolean_indicator(arr_jl), threaded=threaded)
+        return torch.from_numpy(np.asarray(result_jl)).to(arr.dtype)
     else:
         raise TypeError("Input must be a NumPy array or a PyTorch tensor.")
-    
-    return jl.transform(jl.boolean_indicator(arr), threaded=threaded)
 
 def transform_gpu_2d(arr):
     if isinstance(arr, torch.Tensor):
@@ -41,7 +47,9 @@ def transform_gpu_2d(arr):
             ptr -> CuPtr{Float32}(pyconvert(UInt, ptr))
             """)(ptr)
             cu_arr = jl.unsafe_wrap(jl.CuArray, cu_ptr, sz)
-            return jl.transform(jl.boolean_indicator(cu_arr))
+            result_jl = jl.transform(jl.boolean_indicator(cu_arr))
+            result_np = np.asarray(result_jl)
+            return torch.from_numpy(result_np).to(arr.dtype).cuda()
         else:
             raise ValueError("Input must be a CUDA tensor.")
     else:
@@ -56,7 +64,9 @@ def transform_gpu_3d(arr):
             ptr -> CuPtr{Float32}(pyconvert(UInt, ptr))
             """)(ptr)
             cu_arr = jl.unsafe_wrap(jl.CuArray, cu_ptr, sz)
-            return jl.transform(jl.boolean_indicator(cu_arr))
+            result_jl = jl.transform(jl.boolean_indicator(cu_arr))
+            result_np = np.asarray(result_jl)
+            return torch.from_numpy(result_np).to(arr.dtype).cuda()
         else:
             raise ValueError("Input must be a CUDA tensor.")
     else:
