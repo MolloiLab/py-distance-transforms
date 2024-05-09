@@ -1,0 +1,9 @@
+{
+  "julia": "~1.9, ~1.10",
+  "packages": {
+    "DistanceTransforms": {
+      "uuid": "71182807-4d06-4237-8dd0-bdafe4d097e2",
+      "version": "=0.2.1"
+    }
+  }
+}
