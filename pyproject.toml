@@ -7,6 +7,8 @@ authors = [
 ]
 dependencies = [
     "juliacall>=0.9.20",
+    "numpy>=1.26.4",
+    "torch>=2.3.0",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
