@@ -42,45 +42,6 @@ from py_distance_transforms import transform_gpu_2d
 
 x_gpu = torch.rand((100, 100), device='cuda')
 x_gpu = (x_gpu
-
-`py_distance_transforms` is a Python package that provides efficient distance transform operations on arrays. It is a wrapper around the Julia package [DistanceTransforms.jl](https://github.com/Dale-Black/DistanceTransforms.jl), bringing its high-performance capabilities to the Python ecosystem.
-
-## Features
-
-- Fast distance transform computations on CPU and GPU
-- Support for 1D, 2D, and 3D arrays
-- Multi-threading for enhanced CPU performance
-- GPU acceleration for NVIDIA GPUs (CUDA)
-- Simple and intuitive API
-
-## Installation
-
-Install `py_distance_transforms` using pip:
-
-```bash
-pip install py_distance_transforms
-```
-
-## Basic Usage
-
-```python
-from py_distance_transforms import transform_2d
-import numpy as np
-
-arr = np.random.choice([0, 1], size=(10, 10)).astype(np.float32)
-result = transform_2d(arr)
-```
-
-## GPU Acceleration
-
-```python
-import torch
-from py_distance_transforms import transform_gpu_2d
-
-x_gpu = torch.rand((100, 100), device='cuda')
-x_gpu = (x_gpu > 0.5).float()
-
-gpu_transformed = transform_gpu_2d(x_gpu)
 ```
 
 ## Acknowledgments
