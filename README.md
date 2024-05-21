@@ -83,22 +83,6 @@ x_gpu = (x_gpu > 0.5).float()
 gpu_transformed = transform_gpu_2d(x_gpu)
 ```
 
-## Benchmarks
-
-`py_distance_transforms` offers significant performance improvements compared to other Python libraries, especially when utilizing multi-threading and GPU acceleration. Detailed benchmarks can be found in the [documentation](link-to-docs).
-
-## Documentation
-
-For more detailed information on the usage and capabilities of `py_distance_transforms`, please refer to the [documentation](link-to-docs).
-
-## Contributing
-
-Contributions are welcome! Please see the [contributing guidelines](link-to-contributing-guidelines) for more information.
-
-## License
-
-`py_distance_transforms` is released under the [MIT License](link-to-license).
-
 ## Acknowledgments
 
 `py_distance_transforms` is a Python wrapper around the Julia package [DistanceTransforms.jl](https://github.com/MolloiLab/DistanceTransforms.jl). We extend our gratitude to the developers and contributors of DistanceTransforms.jl for their excellent work.
