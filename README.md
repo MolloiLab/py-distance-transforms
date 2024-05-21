@@ -1,11 +1,12 @@
 # py-distance-transforms
+`py_distance_transforms` is a Python package that provides efficient distance transform operations on arrays. It is a wrapper around the Julia package [DistanceTransforms.jl](https://github.com/Dale-Black/DistanceTransforms.jl), bringing its high-performance capabilities to the Python ecosystem.
 
+
+## Documentation
 | Docs | Description |
 |------|-------------|
 | Getting Started| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YNcN0sTk4pu1f79KZLK9dnd4BBqKGqSv?usp=sharing) A quickstart guide to using `py_distance_transforms` for efficient distance transform operations on arrays. |
 | Deep Learning (Hausdorff Loss)| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YNou2N6cywlosHSuBP1Yjj6RLUl-SfLV?usp=sharing) A [MONAI](https://github.com/Project-MONAI/tutorials) tutorial adjusted to show how to use the Hausdorff loss function and the corresponding `py_distance_transforms`|
-
-`py_distance_transforms` is a Python package that provides efficient distance transform operations on arrays. It is a wrapper around the Julia package [DistanceTransforms.jl](https://github.com/Dale-Black/DistanceTransforms.jl), bringing its high-performance capabilities to the Python ecosystem.
 
 ## Features
 
