@@ -1,5 +1,5 @@
 [project]
-name = "distance_transforms_py"
+name = "py_distance_transforms"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
@@ -27,4 +27,4 @@ dev-dependencies = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["pydts"]
+packages = ["py_distance_transforms"]

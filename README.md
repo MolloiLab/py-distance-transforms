@@ -1,5 +1,5 @@
-# DistanceTransformsPy
+# py-distance-transforms
 
-`pip install distance_transforms_py`
+`pip install py_distance_transforms`
 
 Describe your project here.

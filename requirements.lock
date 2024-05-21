@@ -15,7 +15,7 @@ fsspec==2024.3.1
 jinja2==3.1.4
     # via torch
 juliacall==0.9.20
-    # via distance-transforms-py
+    # via py-distance-transforms
 juliapkg==0.1.11
     # via juliacall
 markupsafe==2.1.5
@@ -25,12 +25,12 @@ mpmath==1.3.0
 networkx==3.3
     # via torch
 numpy==1.26.4
-    # via distance-transforms-py
+    # via py-distance-transforms
 semantic-version==2.10.0
     # via juliapkg
 sympy==1.12
     # via torch
 torch==2.3.0
-    # via distance-transforms-py
+    # via py-distance-transforms
 typing-extensions==4.11.0
     # via torch
