@@ -48,4 +48,4 @@ gpu_transformed = transform_gpu_2d(x_gpu)
 
 ## Acknowledgments
 
-`py_distance_transforms` is a Python wrapper around the Julia package [DistanceTransforms.jl](https://github.com/MolloiLab/DistanceTransforms.jl). We extend our gratitude to the developers and contributors of DistanceTransforms.jl for their excellent work.
+`py_distance_transforms` is a Python wrapper around the Julia package [DistanceTransforms.jl](https://github.com/MolloiLab/DistanceTransforms.jl).
