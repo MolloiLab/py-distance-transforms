@@ -41,7 +41,9 @@ import torch
 from py_distance_transforms import transform_gpu_2d
 
 x_gpu = torch.rand((100, 100), device='cuda')
-x_gpu = (x_gpu
+x_gpu = (x_gpu > 0.5).float()
+
+gpu_transformed = transform_gpu_2d(x_gpu)
 ```
 
 ## Acknowledgments
