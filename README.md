@@ -5,8 +5,8 @@
 ## Documentation
 | Docs | Description |
 |------|-------------|
-| Getting Started: \n[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YNcN0sTk4pu1f79KZLK9dnd4BBqKGqSv?usp=sharing) | A quickstart guide to using `py_distance_transforms` for efficient distance transform operations on arrays. |
-| Deep Learning (Hausdorff Loss): \n [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YNou2N6cywlosHSuBP1Yjj6RLUl-SfLV?usp=sharing) | A [MONAI](https://github.com/Project-MONAI/tutorials) tutorial adjusted to show how to use the Hausdorff loss function and the corresponding `py_distance_transforms`|
+| Getting Started: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YNcN0sTk4pu1f79KZLK9dnd4BBqKGqSv?usp=sharing) | A quickstart guide to using `py_distance_transforms` for efficient distance transform operations on arrays. |
+| Deep Learning (Hausdorff Loss): [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YNou2N6cywlosHSuBP1Yjj6RLUl-SfLV?usp=sharing) | A [MONAI](https://github.com/Project-MONAI/tutorials) tutorial adjusted to show how to use the Hausdorff loss function and the corresponding `py_distance_transforms`|
 
 ## Features
 
