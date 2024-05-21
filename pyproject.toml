@@ -1,5 +1,5 @@
 [project]
-name = "pydts"
+name = "distance_transforms_py"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
