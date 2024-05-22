@@ -2,7 +2,7 @@ from juliacall import Main as jl
 
 jl.seval("using Pkg; Pkg.status()")
 jl.seval("using DistanceTransforms")
-jl.seval("using CUDA")
+jl.seval("using DLPack")
 
 DistanceTransforms = jl.DistanceTransforms
-CUDA = jl.CUDA
+DLPack = jl.DLPack
