@@ -1,18 +1,10 @@
 from .julia_import import jl, DistanceTransforms
-from .transform import (
-    transform_1d,
-    transform_2d,
-    transform_3d,
-    transform_gpu_2d,
-    transform_gpu_3d,
-)
+from .transform import transform
+from .transform_cuda import transform_cuda
 
 __all__ = [
     "jl",
     "DistanceTransforms",
-    "transform_1d",
-    "transform_2d",
-    "transform_3d",
-    "transform_gpu_2d",
-    "transform_gpu_3d",
+    "transform",
+    "transform_cuda"
 ]
