@@ -27,26 +27,26 @@ pip install py_distance_transforms
 ## Basic Usage
 
 ```python
-from py_distance_transforms import transform_2d
+from py_distance_transforms import transform
 import numpy as np
 
 arr = np.random.choice([0, 1], size=(10, 10)).astype(np.float32)
-result = transform_2d(arr)
+result = transform(arr)
 ```
 
 ## GPU Acceleration
 
 ```python
 import torch
-from py_distance_transforms import transform_gpu_2d
+from py_distance_transforms import transform_cuda
 
 x_gpu = torch.rand((100, 100), device='cuda')
 x_gpu = (x_gpu > 0.5).float()
 
-gpu_transformed = transform_gpu_2d(x_gpu)
+gpu_transformed = transform_cuda(x_gpu)
 ```
 
 ## Acknowledgments
 
-`py_distance_transforms` is a Python wrapper around the Julia package [DistanceTransforms.jl](https://github.com/MolloiLab/DistanceTransforms.jl).
+- `py_distance_transforms` is a Python wrapper around the Julia package [DistanceTransforms.jl](https://github.com/MolloiLab/DistanceTransforms.jl).
 - Huge thanks to @pabloferz for getting DLPack.jl to work with PythonCall/juliacall and PyTorch. Massive thanks to @cjdoris and all of the contributors to PythonCall.jl as well.
