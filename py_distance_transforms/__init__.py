@@ -1,8 +1,6 @@
 from .julia_import import jl, DistanceTransforms
-from .transform import (
-    transform,
-    transform_cuda
-)
+from .transform import transform
+from .transform_cuda import transform_cuda
 
 __all__ = [
     "jl",
