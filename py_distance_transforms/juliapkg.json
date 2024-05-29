@@ -3,11 +3,11 @@
   "packages": {
     "DLPack": {
       "uuid": "53c2dc0f-f7d5-43fd-8906-6c0220547083",
-      "version": "=0.2.0"
+      "version": "=0.3.0"
     },
     "CUDA": {
       "uuid": "052768ef-5323-5732-b1bb-66c8b64840ba",
-      "version": "=5.4.1"
+      "version": "=5.4.2"
     },
     "DistanceTransforms": {
       "uuid": "71182807-4d06-4237-8dd0-bdafe4d097e2",
